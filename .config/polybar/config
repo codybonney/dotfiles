@@ -28,7 +28,7 @@ font-3 = Siji:size=10;0
 font-4 = Monospace:size=10;0
 
 modules-left = bspwm ewmh
-modules-right = memory cpu volume date
+modules-right = memory cpu temperature date
 
 [module/cpu]
 type = internal/cpu
@@ -155,3 +155,19 @@ label-private-foreground = #bd2c40
 label-private-underline = ${module/bspwm.label-monocle-underline}
 label-private-padding = ${module/bspwm.label-monocle-padding}
 
+[module/temperature]
+type = internal/temperature
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+
+; Thermal zone to use
+; To list all the zone types, run 
+; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
+; Default: 0
+thermal-zone = 2
+
+; Threshold temperature to display warning label
+; Default: 80
+warn-temperature = 60
