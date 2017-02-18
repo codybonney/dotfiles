@@ -1,0 +1,26 @@
+[global_config]
+  borderless = True
+  tab_position = left
+  title_font = Menlo for Powerline 11
+  title_hide_sizetext = True
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Menlo for Powerline 11
+    foreground_color = "#eeeeec"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
