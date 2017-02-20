@@ -9,5 +9,7 @@ unset f
 fi
 unset includes
 
+xsetroot -cursor_name left_ptr & 
+xrdb ~/.Xresources &
 sxhkd &
 exec bspwm

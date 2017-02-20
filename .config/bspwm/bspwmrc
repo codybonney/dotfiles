@@ -1,12 +1,16 @@
 #! /bin/sh
 
+#$HOME/.screenlayout/2-monitor-1-card.sh &
+
 sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor DVI-I-1 -d 1m 2m 3m 4m 5m &
+bspc monitor DVI-D-0 -d 1r 2r 3r 4r 5r &
 
-feh --bg-center /home/cody/Documents/images/backgrounds/business-cat.png
+$HOME/.config/polybar/launch.sh &
 
-$HOME/.config/polybar/launch.sh
+#feh --bg-center /home/cody/Documents/images/backgrounds/business-cat.png &
+nitrogen --restore &
 
 compton -cb --respect-prop-shadow &
 
@@ -31,10 +35,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
 
 # fix java apps, Looking Glass 3D
 wmname LG3D
