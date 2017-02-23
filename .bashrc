@@ -9,6 +9,10 @@
 _JAVA_AWT_WM_NONREPARENTING=1
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+export XCURSOR_THEME=Capitaine
+export XCURSOR_SIZE=24
+
+
 # Fix font rendering with some java programs
 _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 
