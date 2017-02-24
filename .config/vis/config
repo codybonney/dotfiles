@@ -1,3 +1,5 @@
-visualizer.fps=30
-visualizer.spectrum.bar.width=1
+visualizer.fps=28
+visualizer.spectrum.bar.width=2
 visualizer.spectrum.bar.spacing=1
+visualizer.spectrum.smoothing.mode=monstercat
+visualizer.monstercat.smoothing.factor=1.2
