@@ -185,8 +185,8 @@
 
 [slack]
   appname = "Electron"
-  summary = "*Slack*"
-  format = " %b"
+  summary = "Slack Notification"
+  format = "<b> %s</b>\n%b" 
   urgency = normal
 
 [firefox]
