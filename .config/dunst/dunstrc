@@ -157,12 +157,12 @@
 [urgency_normal]
     background = "#6196ea"
     foreground = "#ffffff"
-    timeout = 10
+    timeout = 15
 
 [urgency_critical]
     background = "#ffff00"
     foreground = "#000000"
-    timeout = 0
+    timeout = 30
 
 
 # Every section that isn't one of the above is interpreted as a rules

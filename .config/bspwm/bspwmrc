@@ -1,11 +1,18 @@
 #! /bin/sh
 
-#$HOME/.screenlayout/2-monitor-1-card.sh &
-
 sxhkd &
 
 bspc monitor DVI-I-1 -d 1m 2m 3m 4m 5m &
 bspc monitor DVI-D-0 -d 1r 2r 3r 4r 5r &
+#bspc monitor DVI-I-0 -d 1l 2l 3l 4l 5l &
+
+#i=1
+#for monitor in $(bspc query -M); do
+#bspc monitor $monitor \
+#        -n "$i" \
+#        -d $i/{a,b,c}
+#    let i++
+#done
 
 $HOME/.config/polybar/launch.sh &
 
@@ -33,7 +40,7 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Gimp desktop='^5' state=floating follow=on
 
 # fix java apps, Looking Glass 3D
 wmname LG3D
