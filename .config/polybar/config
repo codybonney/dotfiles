@@ -1,7 +1,7 @@
 ; [settings]
 
 [bar/top]
-monitor = DVI-I-1
+monitor = GPU-0.DVI-I-1
 width = 100%
 height = 26
 clickareas = 35
@@ -29,7 +29,7 @@ modules-left = bspwm
 modules-right = memory cpu temperature date
 
 [bar/right]
-monitor = DVI-D-0
+monitor = GPU-0.DVI-D-0
 width = 100%
 height = 26
 clickareas = 35
@@ -55,6 +55,35 @@ font-3 = Siji:size=10;0
 font-4 = Monospace:size=10;0
 modules-left = bspwm
 modules-right = date
+
+[bar/left]
+monitor = GPU-1.DVI-I-1
+width = 100%
+height = 26
+clickareas = 35
+dock = false
+wm-restack = bspwm
+tray-background = #153433
+tray-position = left
+tray-detached = false
+background = #cc131313
+foreground = #ccD0D0D0
+linecolor = ${bar/bottom.background}
+locale = en_US.UTF-8
+spacing = 4
+lineheight = 2
+padding-left = 2
+padding-right = 5
+module-margin-left = 3
+module-margin-right = 3
+font-0 = Sans-Regular:size=8;0
+font-1 = MaterialIcons:size=10;0
+font-2 = FontAwesome:size=10;0
+font-3 = Siji:size=10;0
+font-4 = Monospace:size=10;0
+modules-left = bspwm
+modules-right = date
+
 
 [module/cpu]
 type = internal/cpu

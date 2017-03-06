@@ -1,10 +1,22 @@
 #! /bin/sh
 
+monitor_id_from_name() {
+    bspc wm -d | jq ".monitors[] | select(.name == \"$1\").id"
+}
+
+MONITOR_CENTER=$(monitor_id_from_name "GPU-0.DVI-I-1");
+MONITOR_RIGHT=$(monitor_id_from_name "GPU-0.DVI-D-0");
+MONITOR_LEFT=$(monitor_id_from_name "GPU-1.DVI-I-1");
+
 sxhkd &
 
-bspc monitor DVI-I-1 -d 1m 2m 3m 4m 5m &
-bspc monitor DVI-D-0 -d 1r 2r 3r 4r 5r &
-#bspc monitor DVI-I-0 -d 1l 2l 3l 4l 5l &
+bspc monitor $MONITOR_CENTER -d 1m 2m 3m & 
+bspc monitor $MONITOR_RIGHT -d 1r 2r 3r & 
+bspc monitor $MONITOR_LEFT -d 1l 2l 3l & 
+
+#bspc monitor GPU-0.DVI-I-1 -d 1m 2m 3m &
+#bspc monitor GPU-0.DVI-D-0 -d 1r 2r 3r &
+#bspc monitor GPU-1.DVI-I-0 -d 1l 2l 3l &
 
 #i=1
 #for monitor in $(bspc query -M); do
