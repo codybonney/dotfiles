@@ -52,7 +52,8 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^5' state=floating follow=on
+bspc rule -a Gimp desktop='^6' state=floating follow=on
+bspc rule -a feh state=floating
 
 # fix java apps, Looking Glass 3D
 wmname LG3D
