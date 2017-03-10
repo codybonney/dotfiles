@@ -1,10 +1,10 @@
 include "/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc"
 style "user-font"
 {
-    font_name="Noto Sans Regular"
+    font_name="Noto Sans Regulair 8"
 }
 widget_class "*" style "user-font"
-gtk-font-name="Noto Sans Regular 10"
+gtk-font-name="Noto Sans Regular 8"
 gtk-theme-name="Arc-Dark"
 gtk-icon-theme-name="Arc"
 gtk-fallback-icon-theme="gnome"
