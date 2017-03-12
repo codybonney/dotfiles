@@ -46,6 +46,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^6' state=floating follow=on
+bspc rule -a intellij-idea desktop='^4' follow=on
 bspc rule -a feh state=floating
 
 # fix java apps, Looking Glass 3D
