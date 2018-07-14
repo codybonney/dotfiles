@@ -10,8 +10,8 @@ Pull the repository, and then create the symbolic links [using GNU
 stow](https://alexpearce.me/2016/02/managing-dotfiles-with-stow/).
 
 ```bash
-$ git clone git@github.com:codybonney/dotfiles.git ~/.dotfiles
-$ cd ~/dotfiles
+$ git clone git@github.com:codybonney/dotfiles.git
+$ cd dotfiles
 $ ./bootstrap.sh
 ```
 
