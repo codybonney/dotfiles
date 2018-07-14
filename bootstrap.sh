@@ -2,3 +2,4 @@
 
 stow --verbose --target=$HOME bash
 stow --verbose --target=$HOME compton
+stow --verbose --target=$HOME vim
