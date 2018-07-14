@@ -1,8 +1,0 @@
-[user]
-	name = Cody Bonney
-	email = me@codybonney.com
-;	email = cbonney@spotxchange.com
-[color]
-	ui = auto
-[core]
-	editor = vim
