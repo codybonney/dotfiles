@@ -1,0 +1,47 @@
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: 1
+
+rofi.terminal: terminator
+rofi.ssh-client: ssh
+rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
+rofi.hide-scrollbar: true
+
+rofi.terminal: terminator
+rofi.ssh-client: ssh
+rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
+rofi.hide-scrollbar: true
+rofi.color-enabled: true
+rofi.color-window: #273238, #273238, #1e2529
+rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+
+*color0: #555753
+*color1: #cc0000
+*color2: #4e9a06
+*color3: #c4a000
+*color4: #3465a4
+*color5: #75507b
+*color6: #06989a
+*color7: #d3d7cf
+*color8: #555753
+*color9: #ef2929
+*color10: #8ae234
+*color11: #fce94f
+*color12: #729fcf
+*color13: #ad7fa8
+*color14: #34e2e2
+*color15: #eeeeec
+
+URxvt.internalBorder: 18
+URxvt*foreground: #eeeeec
+URxvt*background: #000000
+URxvt*font: xft:Menlo\ for\ Powerline:pixelsize=12
+URxvt*scrollBar: false
+
+Xcursor.theme: Capitaine
+Xcursor.size: 24
