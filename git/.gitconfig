@@ -1,0 +1,12 @@
+[user]
+	name = Cody Bonney
+	email = me@codybonney.com
+;	email = cbonney@spotx.tv
+[alias]
+    graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%C(blue)%x20(%ce)%x20%C(cyan)[gpg:%GK%x20%G?]%C(reset)%n%x20%s%n"
+    last = log -1 --stat
+    unstage = reset HEAD --
+[color]
+	ui = auto
+[core]
+	editor = vim
