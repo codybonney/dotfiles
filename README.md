@@ -6,8 +6,8 @@ This is my collection of [configuration files](http://dotfiles.github.io/).
 Usage
 -----
 
-Pull the repository, and then create the symbolic links [using GNU
-stow](https://alexpearce.me/2016/02/managing-dotfiles-with-stow/).
+Pull the repository, and then create the symbolic links using [GNU
+stow](https://www.gnu.org/software/stow/).
 
 ```bash
 $ git clone git@github.com:codybonney/dotfiles.git
