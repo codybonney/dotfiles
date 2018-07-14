@@ -3,6 +3,7 @@
 
 [dotfiles]
 repository = ~/projects/dotfiles
+prefix = .
 packages = [
     'config']
 ignore = [
