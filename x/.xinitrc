@@ -17,4 +17,8 @@ xset -b &
 xrdb -merge ~/.Xresources &
 sxhkd -f 100 &
 xsetroot -cursor_name left_ptr &
+
+# disable touchpad tap-to-click and scrolling while typing
+syndaemon sudo syndaemon -t -i 0.3 -R -d &
+
 exec bspwm
