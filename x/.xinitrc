@@ -15,7 +15,7 @@ export SSH_AUTH_SOCK
 
 xset -b &
 xrdb -merge ~/.Xresources &
-sxhkd -f 100 &
+sxhkd &
 xsetroot -cursor_name left_ptr &
 
 # disable touchpad tap-to-click and scrolling while typing
