@@ -12,7 +12,12 @@ stow](https://www.gnu.org/software/stow/).
 ```bash
 $ git clone git@github.com:codybonney/dotfiles.git
 $ cd dotfiles
-$ ./bootstrap.sh
+$ make install
+```
+
+To remove the symlinks
+```bash
+make remove
 ```
 
 License
