@@ -5,12 +5,7 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: 1
 
-rofi.terminal: terminator
-rofi.ssh-client: ssh
-rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
-rofi.hide-scrollbar: true
-
-rofi.terminal: terminator
+rofi.terminal: urxvt
 rofi.ssh-client: ssh
 rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
 rofi.hide-scrollbar: true
@@ -42,6 +37,12 @@ URxvt*foreground: #eeeeec
 URxvt*background: #000000
 URxvt*font: xft:Menlo\ for\ Powerline:pixelsize=12
 URxvt*scrollBar: false
+! Bind Ctrl-Shift-c & Ctrl-Shift-v to copy and paste
+URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
+URxvt.keysym.C-S-0x56: eval:paste_clipboard
+! Disable ISO 14755 unicode input so we can use Ctrl-Shift bindings
+URxvt.iso14755:        false
+URxvt.iso14755_52:     false
 
 Xcursor.theme: Capitaine
 Xcursor.size: 24
