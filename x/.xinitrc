@@ -9,9 +9,10 @@ unset f
 fi
 unset includes
 
-
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
+
+set -U SXHKD_SHELL /bin/sh &
 
 xset -b &
 xrdb -merge ~/.Xresources &
