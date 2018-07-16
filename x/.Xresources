@@ -4,6 +4,7 @@ Xft.hintstyle: hintfull
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: 1
+Xft.dpi: 96
 
 rofi.terminal: urxvt
 rofi.ssh-client: ssh
@@ -43,6 +44,11 @@ URxvt.keysym.C-S-0x56: eval:paste_clipboard
 ! Disable ISO 14755 unicode input so we can use Ctrl-Shift bindings
 URxvt.iso14755:        false
 URxvt.iso14755_52:     false
+# Clickable Links
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg5
 
 Xcursor.theme: Capitaine
 Xcursor.size: 24
