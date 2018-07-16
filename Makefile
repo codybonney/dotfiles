@@ -1,4 +1,4 @@
-HOME_FILES=bash bspwm compton dunst git polybar rofi sxhkd vim x
+HOME_FILES=bash bspwm compton dunst git intellij polybar rofi sxhkd vim x
 
 # target: help - Display callable targets
 help:
