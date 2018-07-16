@@ -1,0 +1,79 @@
+#! /bin/sh
+
+monitor_id_from_name() {
+    bspc wm -d | jq ".monitors[] | select(.name == \"$1\").id"
+}
+
+sxhkd &
+
+# Get the monitor IDs from their names
+MONITOR_CENTER=$(monitor_id_from_name "GPU-0.DP-4");
+#MONITOR_RIGHT=$(monitor_id_from_name "GPU-1.DVI-D-0");
+#MONITOR_LEFT=$(monitor_id_from_name "DVI-I-1");
+
+# Monitors
+bspc monitor $MONITOR_CENTER -d 1 2 3 4 5 6 7 8 9 & 
+#bspc monitor $MONITOR_RIGHT -d right-1 right-2 right-3 & 
+#bspc monitor $MONITOR_LEFT -d left-1 left-2 & 
+
+# set center monitor to 120hz
+xrandr --output GPU-0.DP-4 --mode "3440x1440" --rate 120 &
+
+# set the color profile of the monitor
+/usr/bin/xcalib -d :0 -verbose ~/.color/icc/dell_alienware_aw3418dw.icc &
+
+# Start Polybar
+$HOME/.config/polybar/launch.sh &
+
+# Set wallpaper
+nitrogen --restore &
+
+# Start compton for transparency and shadows
+compton &
+
+redshift &
+
+# start parcellite clipboard daemon
+parcellite -d &
+
+pulseaudio &
+
+pnmixer &
+
+# bind capslock to control
+setxkbmap -option ctrl:nocaps
+
+# swap alt and super keybindings
+setxkbmap -option altwin:swap_alt_win &
+
+bspc config border_width 1
+#bspc config window_gap 8
+bspc config window_gap 0
+bspc config top_padding 14
+bspc config focused_border_color "#e59400"
+bspc config presel_feedback_color "#84f09c"
+bspc config pointer_motion_interval 10
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+
+# insert second window on right instead of left
+bspc config initial_polarity second_child
+
+#bspc config pointer_follows_focus 	true
+bspc config pointer_follows_monitor 	true
+
+bspc config click_to_focus 	     true
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config single_monocle       true
+bspc config external_rules_command "/home/cody/.config/bspwm/external_rules"
+
+bspc rule -a Gimp desktop='^6' state=floating follow=on
+bspc rule -a intellij-idea-ultimate desktop='^7' follow=on
+bspc rule -a feh state=floating
+bspc rule -a slack desktop='^1'
+
+# fix java apps, Looking Glass 3D
+wmname LG3D
