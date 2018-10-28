@@ -7,18 +7,18 @@ height = 20
 clickareas = 35
 dock = false
 wm-restack = bspwm
-;tray-background = #00131313
-tray-background = #16161d
+tray-background = #00131313
+;tray-background = #16161d
 tray-position = right
 tray-detached = false
-;background = #00131313
-background = #16161d
+background = #00131313
+;background = #16161d
 foreground = #ccD0D0D0
 linecolor = ${bar/bottom.background}
 locale = en_US.UTF-8
 spacing = 4
 ;lineheight = 24
-padding-left = 2
+padding-left = 0
 padding-right = 5
 module-margin-left = 3
 module-margin-right = 3
@@ -28,7 +28,7 @@ font-2 = FontAwesome:size=8;2
 font-3 = Siji:size=10;0
 font-4 = Monospace:size=8;0
 modules-left = bspwm
-modules-center = ipaddress 
+modules-center = 
 modules-right = ethereum-balance wired-network ethereum-price cpu date
 
 [bar/right]
@@ -136,16 +136,20 @@ modules-right = date
     label-dimmed-underline = ${BAR.background}
 
     label-active = %name%
-    label-active-foreground = #fff
-    label-active-background = #d68000
+    label-active-foreground = #eee
+    label-active-background = #b97105
+    ;;label-active-background = #de7766
+    ;label-active-background = #d68000
     ;label-active-underline = #fba922
     label-active-underline = #c9665e
     label-active-font = 0
     label-active-padding = 4
 
     label-occupied = %name%
-    label-occupied-foreground = #fff
-    label-occupied-background = #07b
+    label-occupied-foreground = #eee
+    label-occupied-background = #204c65
+    ;;label-occupied-background = #07b
+    ;label-occupied-background = #1f244a
     label-occupied-underline = #666
     label-occupied-font = 0
     label-occupied-padding = 4
@@ -158,8 +162,9 @@ modules-right = date
     label-urgent-padding = 4
 
     label-empty = %name%
-    label-empty-foreground = #55
-    label-empty-font = 0
+    ;label-empty-foreground = #55
+    label-empty-foreground = #888
+    label-empty-font = 0i
     label-empty-padding = 4
 
     label-monocle = 
