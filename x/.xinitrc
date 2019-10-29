@@ -23,6 +23,9 @@ xrdb -merge ~/.Xresources &
 sxhkd &
 xsetroot -cursor_name left_ptr &
 
+# disable gsync
+nvidia-settings -a AllowGSYNC=0
+
 # disable touchpad tap-to-click and scrolling while typing
 syndaemon sudo syndaemon -t -i 0.3 -R -d &
 
