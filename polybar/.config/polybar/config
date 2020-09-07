@@ -1,7 +1,7 @@
 ; [settings]
 
 [bar/top]
-monitor = GPU-0.DP-4
+monitor = DP-0
 width = 100%
 height = 20
 clickareas = 35
@@ -29,7 +29,7 @@ font-3 = Siji:size=10;0
 font-4 = Monospace:size=8;0
 modules-left = bspwm
 modules-center = 
-modules-right = ethereum-balance wired-network ethereum-price cpu date
+modules-right =  ethereum-balance wired-network ethereum-price cpu date
 
 [bar/right]
 inherit = bar/top
