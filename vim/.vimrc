@@ -24,6 +24,7 @@ set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set autoindent    " always set autoindenting on
 set backspace=indent,eol,start " fix backspace behavior
 set clipboard=unnamed " allow coping to system clipboard
+set foldlevelstart=7
 
 let g:colors_name = "seti"
 set background    = "dark"
