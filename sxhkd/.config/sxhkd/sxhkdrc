@@ -4,7 +4,8 @@
 
 # terminal emulator
 super + Return
-    urxvt
+   alacritty
+#   urxvt
 #	terminator
 
 super + b
@@ -24,7 +25,7 @@ super + shift + Tab
 	rofi -show
 
 super + backslash
-	maim -s ~/images/screenshots/screenshot-$(date +%s).png
+	maim --hidecursor -s ~/images/screenshots/screenshot-$(date +%s).png
 
 # make sxhkd reload its configuration files:
 super + Escape
